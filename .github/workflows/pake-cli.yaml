@@ -28,9 +28,6 @@ on:
         description: '[Height, Optional]'
         required: false
         default: '780'
-      safe_domain:
-        description: '[Safe Domain, Optional]'
-        required: false
       user_agent:
         description: '[User Agent, Optional]'
         required: false
@@ -135,7 +132,6 @@ jobs:
           RESIZE: ${{ inputs.resize }}
           MULTI_ARCH: ${{ inputs.multi_arch }}
           TARGETS: ${{ inputs.targets }}
-          SAFE_DOMAIN: ${{ inputs.safe_domain }}
           USER_AGENT: ${{ inputs.user_agent }}
 
       - name: Upload archive
